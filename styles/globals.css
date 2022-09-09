@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+table tr th {
+  background: #222;
+  color: #fff;
+  padding: 10px;
+  border: #111 solid 1px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: monospace;
+}
+
+
+
+table tr td {
+  font-family: monospace;
+  border: 1px #ccc solid;
+  padding: 5px;
+}
+
+table tr td.rightright {
+  background: #eee;
+}
+
+table tr td {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+table {
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+th {
+  border-bottom: 2px solid #ccc;
+  font-weight: bold;
+  text-align: left;
+}
+
+td {
+  border-bottom: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 4px 10px 4px 0;
+}
+
+tr,
+td,
+th {
+  vertical-align: middle;
+}
+
+table .last {
+  padding-right: 0;
+}
+
+table>tbody>tr>td {
+  white-space: pre;
+}
