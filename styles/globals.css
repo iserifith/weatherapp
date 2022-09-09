@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  overflow-x: hidden;
+}
+
+table {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
 table tr th {
   background: #222;
   color: #fff;
