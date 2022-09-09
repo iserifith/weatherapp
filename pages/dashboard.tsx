@@ -16,7 +16,7 @@ const LineChart = dynamic(() => import("../src/components/LineChart"));
 const Dashboard = () => {
   const { accountState } = useAccountStore();
   const location = accountState?.location as ILocation;
-  const [startDate, setStartDate] = React.useState(subDays(new Date(), 5));
+  const [startDate, setStartDate] = React.useState(subDays(new Date(), 30));
   const [endDate, setEndDate] = React.useState(new Date());
   const { promiseInProgress } = usePromiseTracker();
   const [weatherData, setWeatherData] = React.useState<
@@ -72,8 +72,12 @@ const Dashboard = () => {
           Get Weather Data
         </button>
       </div>
-      <div>{weatherData && <LineChart days={weatherData} />}</div>
-      <div>{weatherData && <Table days={weatherData} />}</div>
+      <div className="container mx-auto overflow-x-auto">
+        {weatherData && <Table days={weatherData} />}
+      </div>
+      <div className="container mx-auto overflow-x-auto">
+        {weatherData && <LineChart days={weatherData} />}
+      </div>
     </div>
   );
 };
