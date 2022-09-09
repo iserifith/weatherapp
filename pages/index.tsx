@@ -36,6 +36,7 @@ const Home: NextPage = () => {
       });
     } catch (error) {
       alert(error);
+      console.log("Disable Adblocker.");
     }
   };
 

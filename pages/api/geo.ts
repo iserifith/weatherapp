@@ -7,7 +7,6 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  // const apiKey = "at_t0BIqGaMV5qxDqWpax1U1czHTfzUd";
   const baseUrl = "https://geo.ipify.org/api/v2";
   const { ip } = req.query;
 
